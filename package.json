@@ -13,6 +13,7 @@
     "@types/node": "^16.18.37",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
@@ -22,8 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
+    "start": "GENERATE_SOURCEMAP=false && craco start",
+    "build": "GENERATE_SOURCEMAP=false && craco build",
     "test": "craco test",
     "eject": "craco eject"
   },
